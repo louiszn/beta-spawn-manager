@@ -39,10 +39,20 @@ dependencies {
     implementation("org.slf4j:slf4j-api:1.8.0-beta4")
     implementation("org.apache.logging.log4j:log4j-slf4j18-impl:2.17.1")
 
+    compileOnly("org.projectlombok:lombok:1.18.24")
+    annotationProcessor("org.projectlombok:lombok:1.18.24")
+
+    implementation("org.jetbrains:annotations:23.0.0")
+    implementation("com.google.guava:guava:33.2.1-jre")
+
     implementation("org.spongepowered:configurate-yaml:4.2.0")
     shadow("org.spongepowered:configurate-yaml:4.2.0")
 
     modImplementation("com.github.matthewperiut:retrocommands:0.5.7") {
+        isTransitive = false
+    }
+
+    modImplementation("net.glasslauncher.mods:glass-networking:1.0.6") {
         isTransitive = false
     }
 }

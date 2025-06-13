@@ -117,3 +117,514 @@
 2025-06-13 09:21:02 [INFO] Done (536764480ns)! For help, type "help" or "?"
 2025-06-13 09:21:06 [INFO] Louiszn [/127.0.0.1:37510] logged in with entity id 122 at (-3.544559602009061, 64.0, -17.218308647207238)
 2025-06-13 09:21:45 [INFO] Successfully disabled spawn protection
+2025-06-13 13:42:15 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 13:42:15 [INFO] Loading properties
+2025-06-13 13:42:15 [INFO] Starting Minecraft server on *:25565
+2025-06-13 13:42:15 [WARNING] **** FAILED TO BIND TO PORT!
+2025-06-13 13:42:15 [WARNING] The exception was: java.net.BindException: Address already in use
+2025-06-13 13:42:15 [WARNING] Perhaps a server is already running on that port?
+2025-06-13 13:42:36 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 13:42:36 [INFO] Loading properties
+2025-06-13 13:42:36 [INFO] Starting Minecraft server on *:25565
+2025-06-13 13:42:36 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 13:42:36 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 13:42:36 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 13:42:36 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 13:42:36 [SEVERE] Unexpected exception
+java.lang.RuntimeException: Mixin transformation of net.minecraft.server.PlayerManager failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at net.minecraft.server.MinecraftServer.init(MinecraftServer.java:145)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:284)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422)
+	... 7 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinPreProcessorException: Attach error for retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands during activity: [Transform -> Method sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> INVOKESPECIAL -> net/glasslauncher/mods/networking/GlassPacket::<init>:(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/NbtCompound;)V]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:313)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277)
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1289)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:294)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 10 more
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: net.glasslauncher.mods.networking.GlassPacket
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.transformMemberReference(MixinPreProcessorStandard.java:786)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.transformMethod(MixinPreProcessorStandard.java:772)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.transform(MixinPreProcessorStandard.java:738)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:307)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: net.glasslauncher.mods.networking.GlassPacket
+	... 20 more
+2025-06-13 13:44:18 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 13:44:18 [INFO] Loading properties
+2025-06-13 13:44:18 [INFO] Starting Minecraft server on *:25565
+2025-06-13 13:44:18 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 13:44:18 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 13:44:18 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 13:44:18 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 13:44:18 [SEVERE] Unexpected exception
+java.lang.RuntimeException: Mixin transformation of net.minecraft.server.PlayerManager failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at net.minecraft.server.MinecraftServer.init(MinecraftServer.java:145)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:284)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422)
+	... 7 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinPreProcessorException: Attach error for retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands during activity: [Transform -> Method sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> INVOKESPECIAL -> net/glasslauncher/mods/networking/GlassPacket::<init>:(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/nbt/NbtCompound;)V]
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:313)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277)
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1289)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:294)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 10 more
+Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: net.glasslauncher.mods.networking.GlassPacket
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.transformMemberReference(MixinPreProcessorStandard.java:786)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.transformMethod(MixinPreProcessorStandard.java:772)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.transform(MixinPreProcessorStandard.java:738)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:307)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: net.glasslauncher.mods.networking.GlassPacket
+	... 20 more
+2025-06-13 13:49:48 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 13:49:48 [INFO] Loading properties
+2025-06-13 13:49:48 [INFO] Starting Minecraft server on *:25565
+2025-06-13 13:49:48 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 13:49:48 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 13:49:48 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 13:49:48 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 13:49:48 [INFO] Preparing level "world"
+2025-06-13 13:49:48 [INFO] Preparing start region for level 0
+2025-06-13 13:49:48 [INFO] Preparing start region for level 1
+2025-06-13 13:49:49 [INFO] Done (833048012ns)! For help, type "help" or "?"
+2025-06-13 13:49:55 [INFO] Louiszn [/127.0.0.1:44982] logged in with entity id 120 at (-3.544559602009061, 64.0, -17.218308647207238)
+2025-06-13 13:50:25 [INFO] Louiszn tried command: spawn
+2025-06-13 13:50:36 [INFO] CONSOLE: Opping Louiszn
+2025-06-13 13:50:45 [INFO] Louiszn issued server command: spawn
+2025-06-13 13:50:51 [INFO] Louiszn issued server command: spawn protection enable
+2025-06-13 13:51:01 [INFO] Louiszn issued server command: deop Louiszn
+2025-06-13 13:51:01 [INFO] Louiszn: De-opping Louiszn
+2025-06-13 13:52:46 [INFO] CONSOLE: Opping Louiszn
+2025-06-13 13:53:55 [INFO] Louiszn issued server command: time set day
+2025-06-13 13:54:00 [INFO] Louiszn issued server command: deop Louiszn
+2025-06-13 13:54:00 [INFO] Louiszn: De-opping Louiszn
+2025-06-13 13:54:30 [INFO] CONSOLE: Opping Louiszn
+2025-06-13 13:54:49 [INFO] Louiszn issued server command: deop Louiszn
+2025-06-13 13:54:49 [INFO] Louiszn: De-opping Louiszn
+2025-06-13 13:55:18 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 13:55:32 [INFO] Louiszn [/127.0.0.1:36400] logged in with entity id 2008 at (28.352960437903043, 63.0, -17.510707449870395)
+2025-06-13 13:55:40 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 14:08:13 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 14:08:13 [INFO] Loading properties
+2025-06-13 14:08:13 [INFO] Starting Minecraft server on *:25565
+2025-06-13 14:08:13 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 14:08:13 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 14:08:13 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 14:08:13 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 14:08:13 [INFO] Preparing level "world"
+2025-06-13 14:08:13 [INFO] Preparing start region for level 0
+2025-06-13 14:08:13 [INFO] Preparing start region for level 1
+2025-06-13 14:08:14 [INFO] Done (768407001ns)! For help, type "help" or "?"
+2025-06-13 14:08:14 [INFO] Louiszn [/127.0.0.1:59456] logged in with entity id 117 at (26.73204268297957, 64.0, -13.764109507479612)
+2025-06-13 14:12:14 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 14:12:15 [INFO] Loading properties
+2025-06-13 14:12:15 [INFO] Starting Minecraft server on *:25565
+2025-06-13 14:12:15 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 14:12:15 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 14:12:15 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 14:12:15 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 14:12:15 [INFO] Preparing level "world"
+2025-06-13 14:12:15 [INFO] Preparing start region for level 0
+2025-06-13 14:12:15 [INFO] Preparing start region for level 1
+2025-06-13 14:12:15 [INFO] Done (737294601ns)! For help, type "help" or "?"
+2025-06-13 14:12:19 [INFO] Louiszn [/127.0.0.1:51466] logged in with entity id 123 at (26.73204268297957, 64.0, -13.764109507479612)
+2025-06-13 14:13:58 [INFO] Louiszn lost connection: disconnect.genericReason
+2025-06-13 14:14:55 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 14:14:55 [INFO] Loading properties
+2025-06-13 14:14:55 [INFO] Starting Minecraft server on *:25565
+2025-06-13 14:14:55 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 14:14:55 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 14:14:55 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 14:14:55 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 14:14:55 [INFO] Preparing level "world"
+2025-06-13 14:14:55 [INFO] Preparing start region for level 0
+2025-06-13 14:14:56 [INFO] Preparing start region for level 1
+2025-06-13 14:14:56 [INFO] Done (713806336ns)! For help, type "help" or "?"
+2025-06-13 14:15:00 [INFO] Louiszn [/127.0.0.1:49640] logged in with entity id 123 at (36.96274511277146, 64.0, -22.36112467318968)
+2025-06-13 14:15:14 [WARNING] Failed to handle packet: java.lang.NullPointerException: Cannot read the array length because "this.contents" is null
+java.lang.NullPointerException: Cannot read the array length because "this.contents" is null
+	at net.minecraft.network.packet.s2c.play.InventoryS2CPacket.size(InventoryS2CPacket.java:59)
+	at net.minecraft.network.Connection.sendPacket(Connection.java:141)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.sendPacket(ServerPlayNetworkHandler.java:363)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.handler$zza000$spawn-manager$onPlayerInteractBlock(ServerPlayNetworkHandler.java:745)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.onPlayerInteractBlock(ServerPlayNetworkHandler.java)
+	at net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket.apply(PlayerInteractBlockC2SPacket.java:57)
+	at net.minecraft.network.Connection.tick(Connection.java:279)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.tick(ServerPlayNetworkHandler.java:43)
+	at net.minecraft.server.network.ConnectionListener.tick(ConnectionListener.java:105)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:378)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:307)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+2025-06-13 14:15:21 [INFO] Louiszn [/127.0.0.1:56274] logged in with entity id 305 at (24.16242780258809, 65.0, -27.429604841570807)
+2025-06-13 14:15:22 [WARNING] Failed to handle packet: java.lang.NullPointerException: Cannot read the array length because "this.contents" is null
+java.lang.NullPointerException: Cannot read the array length because "this.contents" is null
+	at net.minecraft.network.packet.s2c.play.InventoryS2CPacket.size(InventoryS2CPacket.java:59)
+	at net.minecraft.network.Connection.sendPacket(Connection.java:141)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.sendPacket(ServerPlayNetworkHandler.java:363)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.handler$zza000$spawn-manager$onPlayerInteractBlock(ServerPlayNetworkHandler.java:745)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.onPlayerInteractBlock(ServerPlayNetworkHandler.java)
+	at net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket.apply(PlayerInteractBlockC2SPacket.java:57)
+	at net.minecraft.network.Connection.tick(Connection.java:279)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.tick(ServerPlayNetworkHandler.java:43)
+	at net.minecraft.server.network.ConnectionListener.tick(ConnectionListener.java:105)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:378)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:307)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+2025-06-13 14:16:01 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 14:16:01 [INFO] Loading properties
+2025-06-13 14:16:01 [INFO] Starting Minecraft server on *:25565
+2025-06-13 14:16:01 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 14:16:01 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 14:16:01 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 14:16:01 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 14:16:01 [INFO] Preparing level "world"
+2025-06-13 14:16:01 [INFO] Preparing start region for level 0
+2025-06-13 14:16:01 [INFO] Preparing start region for level 1
+2025-06-13 14:16:02 [INFO] Done (631498312ns)! For help, type "help" or "?"
+2025-06-13 14:16:05 [INFO] Louiszn [/127.0.0.1:34080] logged in with entity id 138 at (24.16242780258809, 65.0, -27.429604841570807)
+2025-06-13 14:16:06 [WARNING] Failed to handle packet: java.lang.NullPointerException: Cannot invoke "String.length()" because "this.name" is null
+java.lang.NullPointerException: Cannot invoke "String.length()" because "this.name" is null
+	at net.minecraft.network.packet.handshake.HandshakePacket.size(HandshakePacket.java:29)
+	at net.minecraft.network.Connection.sendPacket(Connection.java:141)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.sendPacket(ServerPlayNetworkHandler.java:363)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.handler$zzi000$spawn-manager$onPlayerInteractBlock(ServerPlayNetworkHandler.java:1746)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.onPlayerInteractBlock(ServerPlayNetworkHandler.java)
+	at net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket.apply(PlayerInteractBlockC2SPacket.java:57)
+	at net.minecraft.network.Connection.tick(Connection.java:279)
+	at net.minecraft.server.network.ServerPlayNetworkHandler.tick(ServerPlayNetworkHandler.java:43)
+	at net.minecraft.server.network.ConnectionListener.tick(ConnectionListener.java:105)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:378)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:307)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+2025-06-13 14:17:17 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 14:17:17 [INFO] Loading properties
+2025-06-13 14:17:17 [INFO] Starting Minecraft server on *:25565
+2025-06-13 14:17:17 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 14:17:17 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 14:17:17 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 14:17:17 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 14:17:17 [INFO] Preparing level "world"
+2025-06-13 14:17:17 [INFO] Preparing start region for level 0
+2025-06-13 14:17:17 [INFO] Preparing start region for level 1
+2025-06-13 14:17:17 [INFO] Done (663326194ns)! For help, type "help" or "?"
+2025-06-13 14:17:21 [INFO] Louiszn [/127.0.0.1:57346] logged in with entity id 144 at (24.16242780258809, 65.0, -27.429604841570807)
+2025-06-13 14:17:57 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 14:17:57 [INFO] Loading properties
+2025-06-13 14:17:57 [INFO] Starting Minecraft server on *:25565
+2025-06-13 14:17:57 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 14:17:57 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 14:17:57 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 14:17:57 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 14:17:57 [INFO] Preparing level "world"
+2025-06-13 14:17:58 [INFO] Preparing start region for level 0
+2025-06-13 14:17:58 [INFO] Preparing start region for level 1
+2025-06-13 14:17:58 [INFO] Done (909343856ns)! For help, type "help" or "?"
+2025-06-13 14:17:59 [INFO] Louiszn [/127.0.0.1:52658] logged in with entity id 144 at (24.16242780258809, 65.0, -27.429604841570807)
+2025-06-13 14:19:19 [INFO] <Louiszn> t
+2025-06-13 14:19:57 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 14:20:54 [INFO] /146.70.144.116:53002 lost connection
+2025-06-13 14:25:38 [INFO] Louiszn [/127.0.0.1:52764] logged in with entity id 775 at (26.5307734498488, 64.0, -22.84881478815393)
+2025-06-13 14:26:02 [INFO] CONSOLE: Opping Louiszn
+2025-06-13 14:26:07 [INFO] Louiszn issued server command: time set day
+2025-06-13 14:26:44 [INFO] Louiszn issued server command: give Louiszn minecraft:furnace
+2025-06-13 14:26:53 [INFO] Louiszn issued server command: give Louiszn furnace
+2025-06-13 14:26:58 [INFO] <Louiszn> give Louiszn 1
+2025-06-13 14:27:02 [INFO] Louiszn issued server command: give Louiszn 1
+2025-06-13 14:27:13 [INFO] Louiszn issued server command: help give
+2025-06-13 14:27:36 [INFO] Louiszn issued server command: give Louiszn wood
+2025-06-13 14:27:45 [INFO] <Louiszn> give wood 1
+2025-06-13 14:27:48 [INFO] Louiszn issued server command: give wood 1
+2025-06-13 14:27:55 [INFO] <Louiszn> give furnace 1
+2025-06-13 14:28:01 [INFO] Louiszn issued server command: give furnace 1
+2025-06-13 14:28:29 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 14:33:21 [INFO] /176.65.148.158:51902 lost connection
+2025-06-13 15:07:51 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:07:51 [INFO] Loading properties
+2025-06-13 15:07:51 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:07:51 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:07:51 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:07:51 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:07:51 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:07:51 [INFO] Preparing level "world"
+2025-06-13 15:07:51 [INFO] Preparing start region for level 0
+2025-06-13 15:07:51 [INFO] Preparing start region for level 1
+2025-06-13 15:07:51 [INFO] Done (666640440ns)! For help, type "help" or "?"
+2025-06-13 15:07:54 [INFO] Louiszn [/127.0.0.1:37080] logged in with entity id 103 at (45.3007892053215, 64.0, -6.78073956490756)
+2025-06-13 15:07:54 [INFO] Disconnecting Louiszn [/127.0.0.1:37080]: Internal server error
+2025-06-13 15:07:54 [WARNING] Failed to handle packet: java.lang.RuntimeException: Mixin transformation of net.minecraft.server.network.ServerPlayNetworkHandler failed
+java.lang.RuntimeException: Mixin transformation of net.minecraft.server.network.ServerPlayNetworkHandler failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.accept(ServerLoginNetworkHandler.java:128)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.onHello(ServerLoginNetworkHandler.java:92)
+	at net.minecraft.network.packet.login.LoginHelloPacket.apply(LoginHelloPacket.java:43)
+	at net.minecraft.network.Connection.tick(Connection.java:279)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.tick(ServerLoginNetworkHandler.java:56)
+	at net.minecraft.server.network.ConnectionListener.tick(ConnectionListener.java:91)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:378)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:307)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422)
+	... 13 more
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager] from phase [DEFAULT] in config [spawn-manager.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:638)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:589)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379)
+	... 16 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Mixin spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager contains non-private static field INTERACTABLE_BLOCKS:Ljava/util/Set;
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.validateField(MixinPreProcessorStandard.java:698)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachFields(MixinPreProcessorStandard.java:602)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:302)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277)
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1289)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:294)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 16 more
+2025-06-13 15:08:40 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:08:40 [INFO] Loading properties
+2025-06-13 15:08:40 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:08:40 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:08:40 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:08:40 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:08:40 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:08:40 [INFO] Preparing level "world"
+2025-06-13 15:08:40 [INFO] Preparing start region for level 0
+2025-06-13 15:08:40 [INFO] Preparing start region for level 1
+2025-06-13 15:08:40 [INFO] Done (659937470ns)! For help, type "help" or "?"
+2025-06-13 15:08:46 [INFO] Louiszn [/127.0.0.1:38466] logged in with entity id 101 at (45.3007892053215, 64.0, -6.78073956490756)
+2025-06-13 15:08:46 [INFO] Disconnecting Louiszn [/127.0.0.1:38466]: Internal server error
+2025-06-13 15:08:46 [WARNING] Failed to handle packet: java.lang.RuntimeException: Mixin transformation of net.minecraft.server.network.ServerPlayNetworkHandler failed
+java.lang.RuntimeException: Mixin transformation of net.minecraft.server.network.ServerPlayNetworkHandler failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.accept(ServerLoginNetworkHandler.java:128)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.onHello(ServerLoginNetworkHandler.java:92)
+	at net.minecraft.network.packet.login.LoginHelloPacket.apply(LoginHelloPacket.java:43)
+	at net.minecraft.network.Connection.tick(Connection.java:279)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.tick(ServerLoginNetworkHandler.java:56)
+	at net.minecraft.server.network.ConnectionListener.tick(ConnectionListener.java:91)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:378)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:307)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422)
+	... 13 more
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager] from phase [DEFAULT] in config [spawn-manager.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:638)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:589)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379)
+	... 16 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Mixin spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager contains non-private static field INTERACTABLE_BLOCKS:Ljava/util/Set;
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.validateField(MixinPreProcessorStandard.java:698)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachFields(MixinPreProcessorStandard.java:602)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:302)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277)
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1289)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:294)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 16 more
+2025-06-13 15:12:35 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:12:35 [INFO] Loading properties
+2025-06-13 15:12:35 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:12:35 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:12:35 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:12:35 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:12:35 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:12:36 [INFO] Preparing level "world"
+2025-06-13 15:12:36 [INFO] Preparing start region for level 0
+2025-06-13 15:12:36 [INFO] Preparing start region for level 1
+2025-06-13 15:12:36 [INFO] Done (749422094ns)! For help, type "help" or "?"
+2025-06-13 15:12:40 [INFO] Louiszn [/127.0.0.1:42946] logged in with entity id 104 at (45.3007892053215, 64.0, -6.78073956490756)
+2025-06-13 15:12:40 [INFO] Disconnecting Louiszn [/127.0.0.1:42946]: Internal server error
+2025-06-13 15:12:40 [WARNING] Failed to handle packet: java.lang.RuntimeException: Mixin transformation of net.minecraft.server.network.ServerPlayNetworkHandler failed
+java.lang.RuntimeException: Mixin transformation of net.minecraft.server.network.ServerPlayNetworkHandler failed
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:427)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.tryLoadClass(KnotClassDelegate.java:323)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.loadClass(KnotClassDelegate.java:218)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassLoader.loadClass(KnotClassLoader.java:119)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.accept(ServerLoginNetworkHandler.java:128)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.onHello(ServerLoginNetworkHandler.java:92)
+	at net.minecraft.network.packet.login.LoginHelloPacket.apply(LoginHelloPacket.java:43)
+	at net.minecraft.network.Connection.tick(Connection.java:279)
+	at net.minecraft.server.network.ServerLoginNetworkHandler.tick(ServerLoginNetworkHandler.java:56)
+	at net.minecraft.server.network.ConnectionListener.tick(ConnectionListener.java:91)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:378)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:307)
+	at net.minecraft.server.MinecraftServer$ServerThread.run(MinecraftServer.java:422)
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:234)
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClassBytes(MixinTransformer.java:202)
+	at net.fabricmc.loader.impl.launch.knot.KnotClassDelegate.getPostMixinClassByteArray(KnotClassDelegate.java:422)
+	... 13 more
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager] from phase [DEFAULT] in config [spawn-manager.mixins.json] FAILED during APPLY
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:638)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:589)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379)
+	... 16 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Mixin spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager contains non-private static field INTERACTABLE_BLOCKS:Ljava/util/Set;
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.validateField(MixinPreProcessorStandard.java:698)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attachFields(MixinPreProcessorStandard.java:602)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.attach(MixinPreProcessorStandard.java:302)
+	at org.spongepowered.asm.mixin.transformer.MixinPreProcessorStandard.createContextFor(MixinPreProcessorStandard.java:277)
+	at org.spongepowered.asm.mixin.transformer.MixinInfo.createContextFor(MixinInfo.java:1289)
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:294)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:421)
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:403)
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 16 more
+2025-06-13 15:13:17 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:13:17 [INFO] Loading properties
+2025-06-13 15:13:17 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:13:17 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:13:17 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:13:17 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:13:17 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:13:17 [INFO] Preparing level "world"
+2025-06-13 15:13:17 [INFO] Preparing start region for level 0
+2025-06-13 15:13:18 [INFO] Preparing start region for level 1
+2025-06-13 15:13:18 [INFO] Done (702474563ns)! For help, type "help" or "?"
+2025-06-13 15:13:23 [INFO] Louiszn [/127.0.0.1:46690] logged in with entity id 99 at (45.3007892053215, 64.0, -6.78073956490756)
+2025-06-13 15:13:33 [INFO] Louiszn issued server command: deop Louiszn
+2025-06-13 15:13:33 [INFO] Louiszn: De-opping Louiszn
+2025-06-13 15:14:55 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:14:55 [INFO] Loading properties
+2025-06-13 15:14:55 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:14:55 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:14:55 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:14:55 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:14:55 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:14:55 [INFO] Preparing level "world"
+2025-06-13 15:14:55 [INFO] Preparing start region for level 0
+2025-06-13 15:14:55 [INFO] Preparing start region for level 1
+2025-06-13 15:14:56 [INFO] Done (717308492ns)! For help, type "help" or "?"
+2025-06-13 15:14:59 [INFO] Louiszn [/127.0.0.1:54316] logged in with entity id 116 at (45.3007892053215, 64.0, -6.78073956490756)
+2025-06-13 15:15:17 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 15:15:47 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:15:47 [INFO] Loading properties
+2025-06-13 15:15:47 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:15:47 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:15:47 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:15:47 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:15:47 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:15:47 [INFO] Preparing level "world"
+2025-06-13 15:15:48 [INFO] Preparing start region for level 0
+2025-06-13 15:15:48 [INFO] Preparing start region for level 1
+2025-06-13 15:15:48 [INFO] Done (681811556ns)! For help, type "help" or "?"
+2025-06-13 15:15:52 [INFO] Louiszn [/127.0.0.1:60742] logged in with entity id 108 at (22.474971644838693, 64.0, -21.672769736862925)
+2025-06-13 15:16:16 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:16:16 [INFO] Loading properties
+2025-06-13 15:16:16 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:16:16 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:16:16 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:16:16 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:16:16 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:16:16 [INFO] Preparing level "world"
+2025-06-13 15:16:16 [INFO] Preparing start region for level 0
+2025-06-13 15:16:17 [INFO] Preparing start region for level 1
+2025-06-13 15:16:17 [INFO] Done (740599526ns)! For help, type "help" or "?"
+2025-06-13 15:16:19 [INFO] Louiszn [/127.0.0.1:46788] logged in with entity id 107 at (22.474971644838693, 64.0, -21.672769736862925)
+2025-06-13 15:16:52 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:16:52 [INFO] Loading properties
+2025-06-13 15:16:52 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:16:52 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:16:52 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:16:52 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:16:52 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:16:52 [INFO] Preparing level "world"
+2025-06-13 15:16:52 [INFO] Preparing start region for level 0
+2025-06-13 15:16:53 [INFO] Preparing start region for level 1
+2025-06-13 15:16:53 [INFO] Done (698897481ns)! For help, type "help" or "?"
+2025-06-13 15:16:56 [INFO] Louiszn [/127.0.0.1:35334] logged in with entity id 113 at (22.474971644838693, 64.0, -21.672769736862925)
+2025-06-13 15:17:24 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 15:17:55 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:17:55 [INFO] Loading properties
+2025-06-13 15:17:55 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:17:55 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:17:55 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:17:55 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:17:55 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:17:55 [INFO] Preparing level "world"
+2025-06-13 15:17:55 [INFO] Preparing start region for level 0
+2025-06-13 15:17:56 [INFO] Preparing start region for level 1
+2025-06-13 15:17:56 [INFO] Done (688293415ns)! For help, type "help" or "?"
+2025-06-13 15:18:02 [INFO] Louiszn [/127.0.0.1:32790] logged in with entity id 118 at (22.233016694404352, 64.0, -22.4022779770442)
+2025-06-13 15:18:25 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 15:19:10 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:19:10 [INFO] Loading properties
+2025-06-13 15:19:10 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:19:10 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:19:10 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:19:10 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:19:10 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:19:10 [INFO] Preparing level "world"
+2025-06-13 15:19:10 [INFO] Preparing start region for level 0
+2025-06-13 15:19:10 [INFO] Preparing start region for level 1
+2025-06-13 15:19:11 [INFO] Done (711551755ns)! For help, type "help" or "?"
+2025-06-13 15:19:14 [INFO] Louiszn [/127.0.0.1:35388] logged in with entity id 123 at (26.368349052804987, 64.0, -21.413009875519762)
+2025-06-13 15:23:04 [INFO] CONSOLE: Opping Louiszn
+2025-06-13 15:23:27 [INFO] Louiszn lost connection: disconnect.quitting
+2025-06-13 15:29:49 [INFO] CONSOLE: Stopping the server..
+2025-06-13 15:29:49 [INFO] Stopping server
+2025-06-13 15:29:49 [INFO] Saving chunks
+2025-06-13 15:29:49 [INFO] Saving chunks
+2025-06-13 15:29:56 [INFO] Starting minecraft server version Beta 1.7.3
+2025-06-13 15:29:56 [INFO] Loading properties
+2025-06-13 15:29:56 [INFO] Starting Minecraft server on *:25565
+2025-06-13 15:29:56 [WARNING] **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+2025-06-13 15:29:56 [WARNING] The server will make no attempt to authenticate usernames. Beware.
+2025-06-13 15:29:56 [WARNING] While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+2025-06-13 15:29:56 [WARNING] To change this, set "online-mode" to "true" in the server.settings file.
+2025-06-13 15:29:56 [INFO] Preparing level "world"
+2025-06-13 15:29:56 [INFO] Preparing start region for level 0
+2025-06-13 15:29:57 [INFO] Preparing start region for level 1
+2025-06-13 15:29:57 [INFO] Done (703082152ns)! For help, type "help" or "?"
+2025-06-13 15:31:36 [INFO] CONSOLE: Stopping the server..
+2025-06-13 15:31:36 [INFO] Stopping server
+2025-06-13 15:31:36 [INFO] Saving chunks
+2025-06-13 15:31:36 [INFO] Saving chunks

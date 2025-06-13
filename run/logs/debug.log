@@ -1,122 +1,132 @@
-[09:21:01] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft Beta 1.7.3 with Fabric Loader 0.15.6-babric.1
-[09:21:01] [main/DEBUG] (FabricLoader/GamePatch) Found game constructor: net.minecraft.server.MinecraftServer -> net.minecraft.server.MinecraftServer
-[09:21:01] [main/DEBUG] (FabricLoader/GamePatch) Patching game constructor <init>()V
-[09:21:01] [main/DEBUG] (FabricLoader/GamePatch) Patched 1 class
-[09:21:01] [main/DEBUG] (FabricLoader/Discovery) Mod discovery time: 15.7 ms
-[09:21:01] [main/DEBUG] (FabricLoader/Resolution) Mod resolution time: 33.6 ms
-[09:21:01] [main/INFO] (FabricLoader) Loading 7 mods:
+[15:29:55] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft Beta 1.7.3 with Fabric Loader 0.15.6-babric.1
+[15:29:55] [main/DEBUG] (FabricLoader/GamePatch) Found game constructor: net.minecraft.server.MinecraftServer -> net.minecraft.server.MinecraftServer
+[15:29:55] [main/DEBUG] (FabricLoader/GamePatch) Patching game constructor <init>()V
+[15:29:55] [main/DEBUG] (FabricLoader/GamePatch) Patched 1 class
+[15:29:55] [main/DEBUG] (FabricLoader/Discovery) Mod discovery time: 16.9 ms
+[15:29:55] [main/DEBUG] (FabricLoader/Resolution) Mod resolution time: 52.0 ms
+[15:29:55] [main/INFO] (FabricLoader) Loading 8 mods:
 	- fabricloader 0.15.6-babric.1
 	- gambac 1.1.1
+	- glassnetworking 1.0.6
 	- java 17
 	- minecraft 1.0.0-beta.7.3
 	- mixinextras 0.3.2
-	- retrocommands 0.5.3
+	- retrocommands 0.5.7
 	- spawn-manager 0.0.1
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-fabric/0.3.2/33c53c7014a170a9cdfbc801f7a77a0eefd3bd00/mixinextras-fabric-0.3.2.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/net/danygames2014/gambac/1.1.1/gambac-1.1.1.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/build/resources/main to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/com/github/matthewperiut/retrocommands/0.5.3/retrocommands-0.5.3.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer com.louiszn.SpawnManager.SpawnManagerMod for mod spawn-manager (key main)
-[09:21:01] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer com.matthewperiut.retrocommands.RetroCommands for mod retrocommands (key main)
-[09:21:01] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/louis/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Error cleaning class output directory: .mixin.out
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Initialising Mixin Platform Manager
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Adding mixin platform agents for container ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Instancing new MixinPlatformAgentDefault for ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) MixinPlatformAgentDefault accepted container ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Instancing new MixinPlatformAgentDefault for ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) MixinPlatformAgentDefault accepted container ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)]
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)]
-[09:21:01] [main/DEBUG] (FabricLoader/Mappings) Loading mappings took 37 ms
-[09:21:01] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Compatibility level JAVA_17 specified by gambac.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
-[09:21:01] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-41eb3c3b42/b1.7.3-net.glasslauncher.biny.b1_7_3.b1.7.3+4cbd9c8-v2/minecraft-merged-41eb3c3b42-b1.7.3-net.glasslauncher.biny.b1_7_3.b1.7.3+4cbd9c8-v2.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/build/classes/java/main to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/build/resources/main to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/fabric-loom/b1.7.3/net.glasslauncher.biny.b1_7_3.b1.7.3+4cbd9c8-v2/mappings.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-yaml/4.2.0/a61bc2dcbce867a3909529bd02c8224cbabbe7c1/configurate-yaml-4.2.0.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-fabric/0.3.2/33c53c7014a170a9cdfbc801f7a77a0eefd3bd00/mixinextras-fabric-0.3.2.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.fabricmc/dev-launch-injector/0.2.1+build.8/da8bef7e6e2f952da707f282bdb46882a0fce5e3/dev-launch-injector-0.2.1+build.8.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.4+legacyfabric.9/ba3f9589f25d40e148cde85582196044942371b3/lwjgl_util-2.9.4+legacyfabric.9.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.4+legacyfabric.9/9f9d4bb327e30e4a7c22d74397c4271b3a9fe345/lwjgl-2.9.4+legacyfabric.9.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.5/5150b9c2951f0fde987ce9c33496e26add1de224/launchwrapper-1.5.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.5/6065cc95c661255349c1d0756657be17c29a4fd3/jopt-simple-4.5.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/com/github/matthewperiut/retrocommands/0.5.3/retrocommands-0.5.3.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/net/danygames2014/gambac/1.1.1/gambac-1.1.1.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-core/4.2.0/7b322107fae38a6b8d30690b6b512696c49d9d66/configurate-core-4.2.0.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.20.0/8f15415b022a25b473e8e16c28ae913186ffb9c4/jline-reader-3.20.0.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/io.leangen.geantyref/geantyref/1.3.16/177fe050a1ecc6f121bd3ffa511f2f5ce9099f00/geantyref-1.3.16.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.kyori/option/1.1.0/593fecb9c42688eebc7d8da5d6ea127f4d4c92a2/option-1.1.0.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.20.0/d0ddcc708ddf527a3454c941b7b9225cc83a15ff/jline-terminal-3.20.0.jar to classpath.
-[09:21:01] [main/DEBUG] (FabricLoader/Entrypoint) No subscribers for entrypoint 'preLaunch'
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Preparing mixins for MixinEnvironment[DEFAULT]
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Selecting config mixinextras.init.mixins.json
-[09:21:01] [main/DEBUG] (FabricLoader/MixinExtras|Service) com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2) is taking over from null
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Selecting config gambac.mixins.json
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Remapping refMap gambac-refmap.json using remapper chain
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Selecting config spawn-manager.mixins.json
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Selecting config retrocommands.mixins.json
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Remapping refMap retrocommands-refmap.json using remapper chain
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Preparing mixinextras.init.mixins.json (0)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Preparing gambac.mixins.json (3)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Preparing spawn-manager.mixins.json (1)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Preparing retrocommands.mixins.json (16)
-[09:21:01] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @SugarWrapper with com.llamalad7.mixinextras.sugar.impl.SugarWrapperInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @FactoryRedirectWrapper with com.llamalad7.mixinextras.wrapper.factory.FactoryRedirectWrapperInjectionInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Mixing BlockBaseMixin from retrocommands.mixins.json into net.minecraft.block.Block
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:BlockBaseMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:BlockBaseMixin from mod retrocommands->@Inject::onBlockPlaced(Lnet/minecraft/world/World;IIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:BlockBaseMixin from mod retrocommands->@Inject::onBlockPlaced(Lnet/minecraft/world/World;IIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:BlockBaseMixin from mod retrocommands->@Inject::onBlockPlaced(Lnet/minecraft/world/World;IIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Mixing access.EntityAccessor from retrocommands.mixins.json into net.minecraft.entity.Entity
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:access.EntityAccessor from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Mixing PlayerBaseMixin from retrocommands.mixins.json into net.minecraft.entity.player.PlayerEntity
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands->@Inject::onGod(Lnet/minecraft/entity/Entity;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands->@Inject::readFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands->@Inject::readFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands->@Inject::readFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands->@Inject::writeToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands->@Inject::writeToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:PlayerBaseMixin from mod retrocommands->@Inject::writeToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) Mixing MixinItemInstance from retrocommands.mixins.json into net.minecraft.item.ItemStack
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:MixinItemInstance from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:MixinItemInstance from mod retrocommands->@Inject::onToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V doesn't use it's CallbackInfoReturnable
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:MixinItemInstance from mod retrocommands->@Inject::onFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
-[09:21:01] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:MixinItemInstance from mod retrocommands->@Inject::onSplit(ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable
-[09:21:01] [main/DEBUG] (FabricLoader/Entrypoint) Iterating over entrypoint 'main'
-[09:21:01] [main/INFO] (SpawnManager) Loading mod
-[09:21:02] [main/INFO] (SpawnManager) Loaded successfully
-[09:21:02] [main/DEBUG] (FabricLoader/Mixin) Mixing communicate.UpdateSignPacketMixin from retrocommands.mixins.json into net.minecraft.network.packet.play.UpdateSignPacket
-[09:21:02] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.UpdateSignPacketMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:02] [main/DEBUG] (FabricLoader/Entrypoint) No subscribers for entrypoint 'server'
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing CommandManagerMixin from retrocommands.mixins.json into net.minecraft.server.command.ServerCommandHandler
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:CommandManagerMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:CommandManagerMixin from mod retrocommands->@Inject::processSPCommands(Lnet/minecraft/server/command/Command;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V does use it's CallbackInfo
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing communicate.PlayerManagerMixin from retrocommands.mixins.json into net.minecraft.server.PlayerManager
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands->@Inject::sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands->@Inject::sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
-[09:21:02] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands->@Inject::sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing ServerPlayNetworkHandlerMixin from spawn-manager.mixins.json into net.minecraft.server.network.ServerPlayNetworkHandler
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing ServerPlayerPacketHandlerMixin from retrocommands.mixins.json into net.minecraft.server.network.ServerPlayNetworkHandler
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:ServerPlayerPacketHandlerMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing access.ServerPlayerPacketHandlerAccessor from retrocommands.mixins.json into net.minecraft.server.network.ServerPlayNetworkHandler
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:access.ServerPlayerPacketHandlerAccessor from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing communicate.ServerPlayPacketHandlerMixin from retrocommands.mixins.json into net.minecraft.server.network.ServerPlayNetworkHandler
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.ServerPlayPacketHandlerMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager->@Inject::handlePlayerAction(Lnet/minecraft/network/packet/c2s/play/PlayerActionC2SPacket;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V does use it's CallbackInfo
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) spawn-manager.mixins.json:ServerPlayNetworkHandlerMixin from mod spawn-manager->@Inject::onPlayerInteractBlock(Lnet/minecraft/network/packet/c2s/play/PlayerInteractBlockC2SPacket;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V does use it's CallbackInfo
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:ServerPlayerPacketHandlerMixin from mod retrocommands->@Inject::parseRegularCommand(Ljava/lang/String;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V does use it's CallbackInfo
-[09:21:06] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.ServerPlayPacketHandlerMixin from mod retrocommands->@Inject::customPacket(Lnet/minecraft/network/packet/play/UpdateSignPacket;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V does use it's CallbackInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/build/resources/main to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/net/glasslauncher/mods/glass-networking/1.0.6/glass-networking-1.0.6.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-fabric/0.3.2/33c53c7014a170a9cdfbc801f7a77a0eefd3bd00/mixinextras-fabric-0.3.2.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/net/danygames2014/gambac/1.1.1/gambac-1.1.1.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/com/github/matthewperiut/retrocommands/0.5.7/retrocommands-0.5.7.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer com.louiszn.SpawnManager.SpawnManagerMod for mod spawn-manager (key main)
+[15:29:55] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer net.glasslauncher.mods.networking.GlassNetworking for mod glassnetworking (key main)
+[15:29:55] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer com.matthewperiut.retrocommands.util.NetworkingUtil for mod retrocommands (key glassnetworking)
+[15:29:55] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer com.matthewperiut.retrocommands.RetroCommands for mod retrocommands (key main)
+[15:29:55] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/louis/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Error cleaning class output directory: .mixin.out
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Initialising Mixin Platform Manager
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Adding mixin platform agents for container ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Instancing new MixinPlatformAgentDefault for ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) MixinPlatformAgentDefault accepted container ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Instancing new MixinPlatformAgentDefault for ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) MixinPlatformAgentDefault accepted container ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)]
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ContainerHandleURI(file:///home/louis/.gradle/caches/modules-2/files-2.1/babric/fabric-loader/0.15.6-babric.1/e71d8fed56790da99156ea24e9523e5442066e2d/fabric-loader-0.15.6-babric.1.jar)]
+[15:29:55] [main/DEBUG] (FabricLoader/Mappings) Loading mappings took 36 ms
+[15:29:55] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Compatibility level JAVA_17 specified by spawn-manager.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[15:29:55] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-97c0e5c4cb/b1.7.3-net.glasslauncher.biny.b1_7_3.b1.7.3+4cbd9c8-v2/minecraft-merged-97c0e5c4cb-b1.7.3-net.glasslauncher.biny.b1_7_3.b1.7.3+4cbd9c8-v2.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/build/classes/java/main to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/build/resources/main to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/fabric-loom/b1.7.3/net.glasslauncher.biny.b1_7_3.b1.7.3+4cbd9c8-v2/mappings.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.2.1-jre/818e780da2c66c63bbb6480fef1f3855eeafa3e4/guava-33.2.1-jre.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-yaml/4.2.0/a61bc2dcbce867a3909529bd02c8224cbabbe7c1/configurate-yaml-4.2.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-fabric/0.3.2/33c53c7014a170a9cdfbc801f7a77a0eefd3bd00/mixinextras-fabric-0.3.2.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.fabricmc/dev-launch-injector/0.2.1+build.8/da8bef7e6e2f952da707f282bdb46882a0fce5e3/dev-launch-injector-0.2.1+build.8.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl_util/2.9.4+legacyfabric.9/ba3f9589f25d40e148cde85582196044942371b3/lwjgl_util-2.9.4+legacyfabric.9.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.4+legacyfabric.9/9f9d4bb327e30e4a7c22d74397c4271b3a9fe345/lwjgl-2.9.4+legacyfabric.9.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.minecraft/launchwrapper/1.5/5150b9c2951f0fde987ce9c33496e26add1de224/launchwrapper-1.5.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.5/6065cc95c661255349c1d0756657be17c29a4fd3/jopt-simple-4.5.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.5/39c7796b469a600f72380316f6b1f11db6c2c7c4/jinput-2.0.5.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.java.jutils/jutils/1.0.0/e12fe1fda814bd348c1579329c86943d2cd3c6a6/jutils-1.0.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/com/github/matthewperiut/retrocommands/0.5.7/retrocommands-0.5.7.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/net/glasslauncher/mods/glass-networking/1.0.6/glass-networking-1.0.6.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/IdeaProjects/spawn-manager/.gradle/loom-cache/remapped_mods/net_glasslauncher_biny_b1_7_3_b1_7_3_4cbd9c8_v2/net/danygames2014/gambac/1.1.1/gambac-1.1.1.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.42.0/638ec33f363a94d41a4f03c3e7d3dcfba64e402d/checker-qual-3.42.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.26.1/c1fde57694bdc14e8618899aaa6e857d9465d7de/error_prone_annotations-2.26.1.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-core/4.2.0/7b322107fae38a6b8d30690b6b512696c49d9d66/configurate-core-4.2.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.jline/jline-reader/3.20.0/8f15415b022a25b473e8e16c28ae913186ffb9c4/jline-reader-3.20.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/io.leangen.geantyref/geantyref/1.3.16/177fe050a1ecc6f121bd3ffa511f2f5ce9099f00/geantyref-1.3.16.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/net.kyori/option/1.1.0/593fecb9c42688eebc7d8da5d6ea127f4d4c92a2/option-1.1.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Knot) Adding /home/louis/.gradle/caches/modules-2/files-2.1/org.jline/jline-terminal/3.20.0/d0ddcc708ddf527a3454c941b7b9225cc83a15ff/jline-terminal-3.20.0.jar to classpath.
+[15:29:55] [main/DEBUG] (FabricLoader/Entrypoint) No subscribers for entrypoint 'preLaunch'
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Preparing mixins for MixinEnvironment[DEFAULT]
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Selecting config spawn-manager.mixins.json
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Selecting config glassnetworking.mixins.json
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Remapping refMap glass-networking-refmap.json using remapper chain
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Selecting config mixinextras.init.mixins.json
+[15:29:55] [main/DEBUG] (FabricLoader/MixinExtras|Service) com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2) is taking over from null
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Selecting config gambac.mixins.json
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Remapping refMap gambac-refmap.json using remapper chain
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Selecting config retrocommands.mixins.json
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Remapping refMap retrocommands-refmap.json using remapper chain
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Preparing spawn-manager.mixins.json (1)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Preparing glassnetworking.mixins.json (5)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Preparing mixinextras.init.mixins.json (0)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Preparing gambac.mixins.json (3)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Preparing retrocommands.mixins.json (13)
+[15:29:55] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @SugarWrapper with com.llamalad7.mixinextras.sugar.impl.SugarWrapperInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Registering new injector for @FactoryRedirectWrapper with com.llamalad7.mixinextras.wrapper.factory.FactoryRedirectWrapperInjectionInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Mixing PacketMixin from glassnetworking.mixins.json into net.minecraft.network.packet.Packet
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) glassnetworking.mixins.json:PacketMixin from mod glassnetworking->@Inject::glassnetworking_afterVanillaPackets(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) glassnetworking.mixins.json:PacketMixin from mod glassnetworking->@Inject::glassnetworking_ifIdentifiable(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) glassnetworking.mixins.json:PacketMixin from mod glassnetworking->@Inject::glassnetworking_ifIdentifiable(Lnet/minecraft/network/packet/Packet;Ljava/io/DataOutputStream;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Mixing feature.BlockBaseMixin from retrocommands.mixins.json into net.minecraft.block.Block
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.BlockBaseMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.BlockBaseMixin from mod retrocommands->@Inject::onBlockPlaced(Lnet/minecraft/world/World;IIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.BlockBaseMixin from mod retrocommands->@Inject::onBlockPlaced(Lnet/minecraft/world/World;IIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.BlockBaseMixin from mod retrocommands->@Inject::onBlockPlaced(Lnet/minecraft/world/World;IIIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) Mixing access.EntityAccessor from retrocommands.mixins.json into net.minecraft.entity.Entity
+[15:29:55] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:access.EntityAccessor from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) Mixing feature.PlayerBaseMixin from retrocommands.mixins.json into net.minecraft.entity.player.PlayerEntity
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands->@Inject::onGod(Lnet/minecraft/entity/Entity;ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands->@Inject::readFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands->@Inject::readFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands->@Inject::readFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands->@Inject::writeToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands->@Inject::writeToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.PlayerBaseMixin from mod retrocommands->@Inject::writeToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) Mixing feature.MixinItemInstance from retrocommands.mixins.json into net.minecraft.item.ItemStack
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.MixinItemInstance from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.MixinItemInstance from mod retrocommands->@Inject::onToTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V doesn't use it's CallbackInfoReturnable
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.MixinItemInstance from mod retrocommands->@Inject::onFromTag(Lnet/minecraft/nbt/NbtCompound;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:feature.MixinItemInstance from mod retrocommands->@Inject::onSplit(ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V does use it's CallbackInfoReturnable
+[15:29:56] [main/DEBUG] (FabricLoader/Entrypoint) Iterating over entrypoint 'main'
+[15:29:56] [main/INFO] (SpawnManager) Loading mod
+[15:29:56] [main/INFO] (SpawnManager) Loaded successfully
+[15:29:56] [main/DEBUG] (FabricLoader/Mixin) Mixing PacketHandlerMixin from glassnetworking.mixins.json into net.minecraft.network.NetworkHandler
+[15:29:56] [main/INFO] (GlassNetworking|Mod) Registered 3 packets, of which 3 are client bound, and 0 are server bound.
+[15:29:56] [main/DEBUG] (FabricLoader/Entrypoint) No subscribers for entrypoint 'server'
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing intercept.CommandManagerMixin from retrocommands.mixins.json into net.minecraft.server.command.ServerCommandHandler
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:intercept.CommandManagerMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:intercept.CommandManagerMixin from mod retrocommands->@Inject::processSPCommands(Lnet/minecraft/server/command/Command;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V does use it's CallbackInfo
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing communicate.PlayerManagerMixin from retrocommands.mixins.json into net.minecraft.server.PlayerManager
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_8 supports class version 52)
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands->@Inject::sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V doesn't use it's CallbackInfo
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands->@Inject::sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V has 0 override(s) in child classes
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) retrocommands.mixins.json:communicate.PlayerManagerMixin from mod retrocommands->@Inject::sendPlayersToAll(Lnet/minecraft/entity/player/ServerPlayerEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V won't be passed a CallbackInfo as a result
+[15:29:56] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing accessor.NbtCompoundAccessor from glassnetworking.mixins.json into net.minecraft.nbt.NbtCompound
+[15:29:57] [Server thread/DEBUG] (FabricLoader/Mixin) Mixing HandshakePacketMixin from glassnetworking.mixins.json into net.minecraft.network.packet.handshake.HandshakePacket

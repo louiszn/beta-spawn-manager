@@ -1,15 +1,17 @@
-[09:21:01] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft Beta 1.7.3 with Fabric Loader 0.15.6-babric.1
-[09:21:01] [main/INFO] (FabricLoader) Loading 7 mods:
+[15:29:55] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft Beta 1.7.3 with Fabric Loader 0.15.6-babric.1
+[15:29:55] [main/INFO] (FabricLoader) Loading 8 mods:
 	- fabricloader 0.15.6-babric.1
 	- gambac 1.1.1
+	- glassnetworking 1.0.6
 	- java 17
 	- minecraft 1.0.0-beta.7.3
 	- mixinextras 0.3.2
-	- retrocommands 0.5.3
+	- retrocommands 0.5.7
 	- spawn-manager 0.0.1
-[09:21:01] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/louis/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
-[09:21:01] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[09:21:01] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[09:21:01] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
-[09:21:01] [main/INFO] (SpawnManager) Loading mod
-[09:21:02] [main/INFO] (SpawnManager) Loaded successfully
+[15:29:55] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.5 Source=file:/home/louis/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.12.5+mixin.0.8.5/8d31fb97c3e0cd7c8dad3441851c523bcfae6d8e/sponge-mixin-0.12.5+mixin.0.8.5.jar Service=Knot/Fabric Env=SERVER
+[15:29:55] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[15:29:55] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[15:29:55] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.2).
+[15:29:56] [main/INFO] (SpawnManager) Loading mod
+[15:29:56] [main/INFO] (SpawnManager) Loaded successfully
+[15:29:56] [main/INFO] (GlassNetworking|Mod) Registered 3 packets, of which 3 are client bound, and 0 are server bound.
