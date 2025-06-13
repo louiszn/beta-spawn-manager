@@ -2,7 +2,7 @@ package com.louiszn.SpawnManager.command;
 
 import com.louiszn.SpawnManager.SpawnManagerConfig;
 import com.matthewperiut.retrocommands.api.Command;
-import com.matthewperiut.retrocommands.command.server.ServerUtil;
+import com.matthewperiut.retrocommands.util.ServerUtil;
 import com.matthewperiut.retrocommands.util.SharedCommandSource;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.ServerWorld;
