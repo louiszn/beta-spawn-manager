@@ -42,7 +42,7 @@ dependencies {
     implementation("org.spongepowered:configurate-yaml:4.2.0")
     shadow("org.spongepowered:configurate-yaml:4.2.0")
 
-    modImplementation("com.github.matthewperiut:retrocommands:0.5.3") {
+    modImplementation("com.github.matthewperiut:retrocommands:0.5.7") {
         isTransitive = false
     }
 }
