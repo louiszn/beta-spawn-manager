@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" factoryName="Application" name="Minecraft Client" type="Application">
+  <configuration default="false" factoryName="Application" name="Test Minecraft Test Client" type="Application">
     <option name="MAIN_CLASS_NAME" value="net.fabricmc.devlaunchinjector.Main"/>
-    <module name="beta-spawn-manager.main"/>
+    <module name="beta-spawn-manager.test"/>
     <option name="PROGRAM_PARAMETERS" value=""/>
     <option name="VM_PARAMETERS" value="-Dfabric.dli.config=/home/louis/IdeaProjects/beta-spawn-manager/.gradle/loom-cache/launch.cfg -Dfabric.dli.env=client -Dfabric.dli.main=net.fabricmc.loader.impl.launch.knot.KnotClient"/>
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run/"/>

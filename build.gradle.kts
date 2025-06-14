@@ -5,17 +5,32 @@ plugins {
     id("com.gradleup.shadow") version "8.3.6"
 }
 
+base.archivesName = project.properties["archives_base_name"] as String
 group = project.properties["maven_group"] as String;
 version = project.properties["mod_version"] as String;
 
 java.sourceCompatibility = JavaVersion.VERSION_17;
 java.targetCompatibility = JavaVersion.VERSION_17;
 
+loom {
+    runs {
+        register("testClient") {
+            source("test")
+            client()
+            configurations.transitiveImplementation
+        }
+        register("testServer") {
+            source("test")
+            server()
+            configurations.transitiveImplementation
+        }
+    }
+}
+
 repositories {
-    maven("https://maven.fabricmc.net/")
-    maven("https://maven.glass-launcher.net/babric")
     maven("https://maven.glass-launcher.net/snapshots/")
     maven("https://maven.glass-launcher.net/releases/")
+    maven("https://maven.glass-launcher.net/babric")
     maven("https://maven.minecraftforge.net/")
     maven("https://jitpack.io/")
     mavenCentral()
@@ -27,14 +42,14 @@ repositories {
             includeGroup("maven.modrinth")
         }
     }
-
-    mavenCentral()
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:${project.properties["minecraft_version"]}")
+    minecraft("com.mojang:minecraft:b1.7.3")
     mappings("net.glasslauncher:biny:${project.properties["mappings_version"]}:v2")
     modImplementation("babric:fabric-loader:${project.properties["loader_version"]}")
+
+    implementation("org.apache.logging.log4j:log4j-core:2.17.2")
 
     implementation("org.slf4j:slf4j-api:1.8.0-beta4")
     implementation("org.apache.logging.log4j:log4j-slf4j18-impl:2.17.1")
@@ -52,9 +67,8 @@ dependencies {
         isTransitive = false
     }
 
-    modImplementation("net.glasslauncher.mods:glass-networking:1.0.6") {
-        isTransitive = false
-    }
+    modImplementation("net.modificationstation:StationAPI:${project.properties["stationapi_version"]}")
+    modImplementation("net.glasslauncher.mods:GlassConfigAPI:${project.properties["gcapi_version"]}")
 }
 
 tasks {
@@ -81,10 +95,6 @@ tasks.withType<ProcessResources> {
     filesMatching("fabric.mod.json") {
         expand(mapOf("version" to project.properties["version"]))
     }
-}
-
-tasks.withType<JavaCompile> {
-    options.encoding = "UTF-8"
 }
 
 tasks.withType<JavaCompile> {
