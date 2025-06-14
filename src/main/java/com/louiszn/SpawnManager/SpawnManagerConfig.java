@@ -59,7 +59,7 @@ public class SpawnManagerConfig {
         @Setting(value = "protectionRadius")
         public int protectionRadius = 16;
 
-        @Setting(value = "isBlockInteractable")
-        public boolean isBlockInteractable = false;
+        @Setting(value = "areProtectedBlocksUsable")
+        public boolean areProtectedBlocksUsable = false;
     }
 }
