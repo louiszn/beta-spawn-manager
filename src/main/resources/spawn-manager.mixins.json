@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "server": [
-    "ServerPlayNetworkHandlerMixin"
+    "ServerPlayNetworkHandlerMixin",
+    "ServerWorldMixin"
   ],
   "client": [],
   "injectors": {

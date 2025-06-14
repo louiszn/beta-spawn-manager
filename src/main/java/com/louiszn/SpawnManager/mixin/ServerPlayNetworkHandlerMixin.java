@@ -5,6 +5,7 @@ import com.louiszn.SpawnManager.SpawnManagerConfig;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
 import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket;
@@ -22,7 +23,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-// TODO: add bypass condition for useable items.
+// TODO: add bypass condition for usable items.
 
 /**
  * Spawn protection is hardcoded so we have to manually edit how the logic works.
@@ -141,7 +142,7 @@ public abstract class ServerPlayNetworkHandlerMixin {
 
         boolean canUseBlock = SpawnManagerConfig.config.areProtectedBlocksUsable;
 
-        if (!canUseBlock && isBlockUsable(block) || item != null) {
+        if (!canUseBlock && (isBlockUsable(block) || item != null)) {
             this.sendDeniedMessage();
         }
     }

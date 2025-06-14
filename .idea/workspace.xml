@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e79489b-3f90-4b66-9fc3-073f68606b5c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/louiszn/SpawnManager/mixin/ServerPlayNetworkHandlerMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/louiszn/SpawnManager/mixin/ServerPlayNetworkHandlerMixin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/louis/IdeaProjects/beta-spawn-manager/.idea/runConfigurations",
+    "last_opened_file_path": "/home/louis/IdeaProjects/beta-spawn-manager/.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-de1bbea35d/b1.7.3-net.glasslauncher.biny.b1_7_3.b1.7.3+2f404bc-v2/minecraft-merged-de1bbea35d-b1.7.3-net.glasslauncher.biny.b1_7_3.b1.7.3+2f404bc-v2.jar",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
