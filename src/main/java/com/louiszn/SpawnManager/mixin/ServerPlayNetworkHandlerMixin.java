@@ -1,17 +1,22 @@
 package com.louiszn.SpawnManager.mixin;
 
-import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
+import com.llamalad7.mixinextras.sugar.Local;
 import com.louiszn.SpawnManager.SpawnManagerConfig;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.BucketItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.packet.Packet;
 import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
 import net.minecraft.network.packet.c2s.play.PlayerInteractBlockC2SPacket;
+import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
+import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
-import net.minecraft.server.network.ServerPlayerInteractionManager;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.ServerWorld;
@@ -22,8 +27,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
-// TODO: add bypass condition for usable items.
 
 /**
  * Spawn protection is hardcoded so we have to manually edit how the logic works.
@@ -37,6 +40,9 @@ public abstract class ServerPlayNetworkHandlerMixin {
 
     @Shadow
     private boolean teleported;
+
+    @Shadow
+    public abstract void sendPacket(Packet packet);
 
     @Unique
     private void sendDeniedMessage() {
@@ -96,6 +102,18 @@ public abstract class ServerPlayNetworkHandlerMixin {
     }
 
     @Inject(
+            method = "handlePlayerAction",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/minecraft/server/network/ServerPlayNetworkHandler;sendPacket(Lnet/minecraft/network/packet/Packet;)V",
+                    ordinal = 1
+            )
+    )
+    private void onHardBlockBreak(PlayerActionC2SPacket packet, CallbackInfo ci) {
+        this.sendDeniedMessage();
+    }
+
+    @Inject(
             method = "onPlayerInteractBlock",
             at = @At(
                     value = "INVOKE",
@@ -138,12 +156,37 @@ public abstract class ServerPlayNetworkHandlerMixin {
             return;
         }
 
-        ItemStack item = player.inventory.getSelectedItem();
+        ItemStack itemStack = player.inventory.getSelectedItem();
 
         boolean canUseBlock = SpawnManagerConfig.config.areProtectedBlocksUsable;
 
-        if (!canUseBlock && (isBlockUsable(block) || item != null)) {
+        if (canUseBlock && isBlockUsable(block)) {
+            player.interactionManager.interactBlock(player, world, itemStack, positionX, positionY, positionZ, packet.side);
+        } else {
             this.sendDeniedMessage();
+        }
+    }
+
+    @Inject(
+            method = "onPlayerInteractBlock",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/minecraft/screen/ScreenHandler;sendContentUpdates()V"
+            )
+    )
+    private void updateItemSlot(PlayerInteractBlockC2SPacket packet, CallbackInfo ci) {
+        ItemStack stack = player.inventory.getSelectedItem();
+
+        if (stack == null) {
+            return;
+        }
+
+        Item item = stack.getItem();
+
+        // Bucket doesn't send correct item state so we should update it manually.
+        if (item instanceof BucketItem) {
+            Slot slot = player.currentScreenHandler.getSlot(player.inventory, player.inventory.selectedSlot);
+            this.sendPacket(new ScreenHandlerSlotUpdateS2CPacket(player.currentScreenHandler.syncId, slot.id, player.inventory.getSelectedItem()));
         }
     }
 }
